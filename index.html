@@ -29,14 +29,12 @@
 
       body {
         background-color: hsl(212, 45%, 89%);
-        height: 70rem;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: "Outfit", sans-serif;
         padding: 0 2rem;
-        padding-top: 3.2rem;
-        padding-bottom: 3.2rem;
       }
 
       .card {
@@ -82,6 +80,14 @@
         color: hsl(220, 15%, 55%);
         font-size: 1.6rem;
         line-height: 1.4;
+      }
+
+      @media (max-height: 34.5em) {
+        body {
+          height: auto;
+          padding-top: 6.4rem;
+          padding-bottom: 6.4rem;
+        }
       }
 
       @media (max-width: 27.725em) {
